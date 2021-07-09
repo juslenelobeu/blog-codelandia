@@ -1,0 +1,122 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lexend+Deca&display=swap');
+  
+  * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #E5E5E5;
+}
+
+:root {
+  --blue: #3EA1DB;
+  --blue-dark: #574AE8;
+  --white: #FFF;
+
+  --title: #313131;
+  --text: #B6B6B6;
+  
+  --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 2rem;
+}
+
+header {
+  background: var(--linear);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 73px;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: hsl(100,100%, 100%, .2);
+  height: 65px;
+  border-radius: 5px;
+}
+
+.search button {
+  background: transparent;
+  border: none;
+  padding: 17px;
+}
+.search button > img {
+  width: 23px;
+  height: 23px;
+}
+
+.search input {
+  flex: 10;
+  font-family: 'Inter', sans-serif;
+  background: transparent;
+  color: var(--white);
+  border: none;
+  font-size: 18px;
+  outline: none;
+  padding-right: 1rem;
+}
+.search input::placeholder {
+  color: hsla(0, 0%, 100%, 1);
+  filter: opacity(50%);
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content-post {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  padding: 20px 25px;
+  margin-bottom: 50px;
+}
+.content-post > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text);
+  font-size: 16px;
+}
+.content-post span > h1 {
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: var(--title);
+}
+.content-post span > p {
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--text);
+}
