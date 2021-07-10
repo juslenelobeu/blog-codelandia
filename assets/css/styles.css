@@ -30,8 +30,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
   width: 100%;
+  height: auto;
   max-width: 900px;
   margin: 0 2rem;
+  padding-bottom: 2rem;
 }
 
 header {
@@ -42,16 +44,17 @@ header {
   justify-content: center;
 }
 
-nav {
+.content-header nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 73px;
 }
 
-nav a {
+.content-header nav a {
   color: var(--white);
   text-decoration: none;
+  font-size: 24px;
 }
 
 .search {
@@ -66,6 +69,15 @@ nav a {
   background: transparent;
   border: none;
   padding: 17px;
+  cursor: pointer;
+  transition: transform .2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.search button:active {
+  transform: scale(1.2);
 }
 .search button > img {
   width: 23px;
@@ -91,11 +103,10 @@ nav a {
 main {
   margin-top: 100px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .content-post {
-  width: 100%;
   background-color: var(--white);
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
@@ -119,4 +130,46 @@ main {
   font-size: 18px;
   line-height: 32px;
   color: var(--text);
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin: 0 1rem;
+  }
+  header {
+    height: 200px;
+  }
+  .content-header nav {
+    margin-bottom: 41px;
+  }
+  .content-header nav a {
+    font-size: 18px;
+  }
+  .search {
+    height: 40px;
+  }
+  .search button {
+    padding: 12px 13px 12px 9px;
+  }
+  .search button > img {
+    width: 15px;
+    height: 15px;
+  }
+  .search input {
+    font-size: 14px;
+  }
+
+  main {
+    margin-top: 50px;
+  }
+  .content-post {
+    margin-bottom: 25px;
+  }
+  .content-post > div, .content-post span > p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .content-post span > h1 {
+    font-size: 18px;
+  }
 }
