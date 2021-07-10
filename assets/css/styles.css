@@ -135,6 +135,17 @@ main {
   line-height: 32px;
   color: var(--text);
 }
+footer {
+  display: flex;
+  justify-content: center;
+  padding: .5rem 0;
+  font-size: .8rem;
+  color: var(--text)
+}
+footer a {
+  text-decoration: none;
+  color: var(--blue)
+}
 
 @media (max-width: 576px) {
   .container {
