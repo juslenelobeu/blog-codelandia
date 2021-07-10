@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Codelândia | Desafio 1</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
@@ -17,7 +19,7 @@
           <a href="/">
             <h1>Codelândia</h1>
           </a>
-          <a href="/">blog</a>
+          <a href="">blog</a>
         </nav>
         <div class="search">
           <button class="btn-search" type="submit">
@@ -32,48 +34,79 @@
     <div class="container">
       <article class="content-post">
         <div>
-          <span>02 de jul, 2021</span>
-          <span>
-            <img src="./assets/image/icon-heart.svg" alt="Ícone de coração para curtir o post">
-          </span>
+          <span class="date">02 de jul, 2021</span>
+          <span><i class="far fa-heart"></i></span>
         </div>
         <span>
-          <h1>Agora é oficial: o Windows 11 está vindo</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae
+          <h1 class="title">Agora é oficial: o Windows 11 está vindo</h1>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor
+            est. Nam vitae
             finibus
             ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
         </span>
       </article>
       <article class="content-post">
         <div>
-          <span>02 de jul, 2021</span>
-          <span>
-            <img src="./assets/image/icon-heart.svg" alt="Ícone de coração para curtir o post">
-          </span>
+          <span class="date">02 de jul, 2021</span>
+          <span><i class="far fa-heart"></i></span>
         </div>
         <span>
-          <h1>Agora é oficial: o Windows 11 está vindo</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae
-            finibus
-            ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
+          <h1 class="title">Tim Berners-Lee vai leiloar código-fonte da web</h1>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit lectus libero,
+            id efficitur arcu
+            viverra ac. Etiam sed sagittis velit, vitae convallis turpis. Praesent in purus non tellus tincidunt
+            fermentum eu at sem. Curabitur lacus libero.</p>
         </span>
       </article>
       <article class="content-post">
         <div>
-          <span>02 de jul, 2021</span>
-          <span>
-            <img src="./assets/image/icon-heart.svg" alt="Ícone de coração para curtir o post">
-          </span>
+          <span class="date">02 de jul, 2021</span>
+          <span><i class="far fa-heart"></i></span>
         </div>
         <span>
-          <h1>Agora é oficial: o Windows 11 está vindo</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor est. Nam vitae
-            finibus
-            ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
+          <h1 class="title">Tem Firefox novo no pedaço e você vai quer migrar</h1>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor
+            est.</p>
+        </span>
+      </article>
+      <article class="content-post">
+        <div>
+          <span class="date">02 de jul, 2021</span>
+          <span><i class="far fa-heart"></i></span>
+        </div>
+        <span>
+          <h1 class="title">John MCAfee, criador do antivírus McAfee, morre</h1>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras hendrerit lectus libero,
+            id efficitur arcu
+            viverra ac. Etiam sed sagittis velit, vitae convallis turpis. Praesent in purus non tellus tincidunt
+            fermentum eu at sem. Curabitur lacus libero.</p>
         </span>
       </article>
     </div>
   </main>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    const sr = ScrollReveal({
+      origin: 'bottom',
+      distance: '50px',
+      duration: 2000,
+      reset: true
+    });
+
+    ScrollReveal().reveal('.content-post', {
+      delay: 200
+    });
+    ScrollReveal().reveal('.date', {
+      delay: 400
+    });
+    ScrollReveal().reveal('.title', {
+      delay: 500
+    });
+    ScrollReveal().reveal('.description', {
+      delay: 600
+    });
+  </script>
 </body>
 
 </html>

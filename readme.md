@@ -13,3 +13,5 @@ Página inicial de um blog com alguns exemplos de postagens e campo de pesquisa
   - [x] Header contendo nome do blog e campo de busca
   - [x] Main com Listagens dos posts
 - [x] Css criado com a estilização proposta no desafio
+- [x] Formatação realizada para reponsividade
+- [x] Aplicação de script nos itens de posts para animar ao rolar o scroll
